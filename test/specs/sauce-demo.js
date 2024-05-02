@@ -7,7 +7,7 @@ describe('Sauce Demo Automation Test Cucumber', () => {
 
     it('Login Gagal', async () => {
         await sauceLoginpage.openBrowser()
-        await sauceLoginpage.login('standard_user', 'apaansih')
+        await sauceLoginpage.login('standard_user', 'halahhhh')
         const alerterror = await $('[data-test="error"]')
         await expect(alerterror).toBeDisplayed()
     })

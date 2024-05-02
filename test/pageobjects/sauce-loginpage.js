@@ -2,7 +2,8 @@ import { $ } from '@wdio/globals'
 
 class SauceLoginPage {
     get inputUsername() {
-        return $('#user-name');
+        // return $('#user-name');
+        return $('/html/body/div/div/div[2]/div[1]/div/div/form/div[1]/input');
     }
     get inputPassword() {
         return $('#password');
