@@ -14,9 +14,9 @@ class SauceLoginPage {
     async login (username, password) {
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
-        await browser.pause(1000);
+        // await browser.pause(1000);
         await this.btnLogin.click();
-        await browser.pause(1000);
+        // await browser.pause(1000);
     }
 
     async openBrowser () {

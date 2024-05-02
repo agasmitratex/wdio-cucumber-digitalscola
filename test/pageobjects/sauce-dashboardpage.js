@@ -28,13 +28,13 @@ class DashboardPage {
     async removeProductFromCart () {
         await this.btnRemoveFromCart.click();
     }
-    async openProduct () {
+    async openProductImage () {
         await this.imgProduct.click();
     }
     async openCart () {
         await this.btnCart.click();
     }
-    async openProductDetails () {
+    async openProductTitle () {
         await this.lblProduct.click();
     }
 }

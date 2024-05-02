@@ -18,6 +18,15 @@ class SauceCartPage {
     async openBrowser () {
         await browser.url('https://www.saucedemo.com/cart.html')
     }
+
+    async continueShopping () {
+        await this.btnContinueShopping.click();
+    }
+
+    async removeFromCart () {
+
+        await this.btnRemoveFromCart.click();
+    }
 }
 
 export default new SauceCartPage();
