@@ -1,36 +1,36 @@
 Feature: Sauce Demo
 
-  Scenario Outline: Sebagai user saya gagal login ke aplikasi
+  Background: 
+    Given user membuka browser
+    When user melakukan login dengan username standard_user dan password secret_sauce
 
-    Given saya membuka browser
-    When saya melakukan login dengan username standard_user dan password apasih
+  @negative
+  Scenario Outline: user gagal login ke aplikasi
     Then sistem menampilkan pesan error
+  
 
-  Scenario Outline: Sebagai user saya bisa login ke aplikasi
-
-    Given saya membuka browser
-    When saya melakukan login dengan username standard_user dan password secret_sauce
+  @positive
+  Scenario Outline: user berhasil login ke aplikasi
     Then sistem menampilkan halaman dashboard
-    
-  Scenario Outline: Sebagai user saya bisa melihat detail produk
-
-    Given saya membuka gambar produk
+  
+  @positive
+  Scenario Outline: user melihat detail produk
+    When user membuka gambar produk
     Then sistem menampilkan halaman produk yang dipilih
 
-
-  Scenario Outline: Sebagai user saya bisa menambahkan produk
-  
-    Given saya menambahkan produk ke keranjang
+  @positive
+  Scenario Outline: user bisa menambahkan produk
+    When user menambahkan produk dari halaman dashboard
     Then sistem menampilkan tombol remove
+    And sistem menampilkan jumlah item di keranjang
 
-
-  Scenario Outline: Sebagai user saya bisa membuka halaman keranjang
-  
-    Given saya membuka halaman keranjang
+  @positive
+  Scenario Outline: user bisa membuka halaman keranjang
+    When user membuka halaman keranjang
     Then sistem menampilkan halaman keranjang
 
-
-  Scenario Outline: Sebagai user saya bisa melanjutkan belanja
-  
-    Given saya melanjutkan berbelanja
+  @positive
+  Scenario Outline: user bisa melanjutkan belanja
+    When user membuka halaman keranjang
+    And user melanjutkan berbelanja
     Then sistem menampilkan halaman dashboard

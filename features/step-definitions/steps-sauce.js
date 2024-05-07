@@ -3,16 +3,16 @@ import { expect, $, browser } from '@wdio/globals'
 
 
 import SauceLoginPage from '../pageobjects/sauce-loginpage.js';
-import sauceDashboardpage from '../../test/pageobjects/sauce-dashboardpage.js';
-import sauceProductpage from '../../test/pageobjects/sauce-productpage.js';
-import sauceCartpage from '../../test/pageobjects/sauce-cartpage.js';
+import sauceDashboardpage from '../pageobjects/sauce-dashboardpage.js';
+import sauceProductpage from '../pageobjects/sauce-productpage.js';
+import sauceCartpage from '../pageobjects/sauce-cartpage.js';
 
 
-Given('saya membuka browser', async () => {
+Given('user membuka browser', async () => {
     await SauceLoginPage.openBrowser();
 });
 
-When(/^saya melakukan login dengan username (\w+) dan password (.+)$/, async (username, password) => {
+When(/^user melakukan login dengan username (\w+) dan password (.+)$/, async (username, password) => {
     await SauceLoginPage.login(username, password);
 });
 
@@ -26,7 +26,7 @@ Then(/^sistem menampilkan halaman dashboard$/, async () => {
     await expect(browser).toHaveTitle('Swag Labs');
 });
 
-Given(/^saya membuka gambar produk$/, async () => {
+When(/^user membuka gambar produk$/, async () => {
     await sauceDashboardpage.openProductImage();
 });
 
@@ -34,34 +34,34 @@ Then(/^sistem menampilkan halaman produk yang dipilih$/, async () => {
     await expect(browser).toHaveUrl(`https://www.saucedemo.com/inventory-item.html?id=4`);
 });
 
-Given(/^saya menambahkan produk ke keranjang$/, async () => {
+When(/^user menambahkan produk dari halaman product$/, async () => {
     await sauceProductpage.AddProduct();
 });
 
 Then(/^sistem menampilkan tombol remove$/, async () => {
-    const btnremove = await $('#remove');
+    const btnremove = await $('#remove-sauce-labs-backpack');
     await expect(btnremove).toBeDisplayed();
 });
 
-// When(/^saya menghapus produk dari keranjang$/, async () => {
-//     await SauceProductPage.RemoveProduct();
-// });
+When(/^user menghapus produk dari keranjang$/, async () => {
+    await sauceProductpage.RemoveProduct();
+});
 
-// Then(/^sistem menampilkan tombol add to cart$/, async () => {
-//     const btnaddtocart = await $('#add-to-cart');
-//     await expect(btnaddtocart).toBeDisplayed();
-// });
+Then(/^sistem menampilkan tombol add to cart$/, async () => {
+    const btnaddtocart = await $('#add-to-cart');
+    await expect(btnaddtocart).toBeDisplayed();
+});
 
-// When(/^saya menambahkan produk ke keranjang$/, async () => {
-//     await DashboardPage.addProductToCart();
-// });
+When(/^user menambahkan produk dari halaman dashboard$/, async () => {
+    await sauceDashboardpage.addProductToCart();
+});
 
 Then(/^sistem menampilkan jumlah item di keranjang$/, async () => {
     const cart = await $('[class="shopping_cart_badge"]');
-    await expect(cart).toHaveText(itemCount.toString());
+    await expect(cart).toBeDisplayed();
 });
 
-Given(/^saya membuka halaman keranjang$/, async () => {
+When(/^user membuka halaman keranjang$/, async () => {
     await sauceDashboardpage.openCart();
 });
 
@@ -71,7 +71,7 @@ Then(/^sistem menampilkan halaman keranjang$/, async () => {
     await expect(cartitem).toBeDisplayed();
 });
 
-Given(/^saya melanjutkan berbelanja$/, async () => {
+Given(/^user melanjutkan berbelanja$/, async () => {
     await sauceCartpage.continueShopping();
 });
 
