@@ -53,6 +53,19 @@ export const config = {
         browserName: 'chrome'
     }],
 
+    // capabilities: [{
+    //     myChromeBrowser: {
+    //         capabilities: {
+    //             browserName: 'chrome'
+    //         }
+    //     },
+    //     myFirefoxBrowser: {
+    //         capabilities: {
+    //             browserName: 'firefox'
+    //         }
+    //     }
+    // }],
+
     //
     // ===================
     // Test Configurations
@@ -124,6 +137,7 @@ export const config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec',['allure', {outputDir: 'allure-results'}],'cucumberjs-json'],
+    // reporters: ['spec', 'cucumberjs-json'],
 
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
@@ -178,8 +192,9 @@ export const config = {
      * @param  {object} args     object that will be merged with the main configuration once worker is initialized
      * @param  {object} execArgv list of string arguments passed to the worker process
      */
-    // onWorkerStart: function (cid, caps, specs, args, execArgv) {
-    // },
+    onWorkerStart: function (cid, caps, specs, args, execArgv) {
+        console.log("Dieksekusi dari onworker start")
+    },
     /**
      * Gets executed just after a worker process has exited.
      * @param  {string} cid      capability id (e.g 0-0)
@@ -222,8 +237,9 @@ export const config = {
      * @param {string}                   uri      path to feature file
      * @param {GherkinDocument.IFeature} feature  Cucumber feature object
      */
-    // beforeFeature: function (uri, feature) {
-    // },
+    beforeFeature: function (uri, feature) {
+        console.log("dieksekusi di before feature: ulala ulala")
+    },
     /**
      *
      * Runs before a Cucumber Scenario.
@@ -252,8 +268,11 @@ export const config = {
      * @param {number}             result.duration  duration of scenario in milliseconds
      * @param {object}             context          Cucumber World object
      */
-    // afterStep: function (step, scenario, result, context) {
-    // },
+    afterStep: function (step, scenario, result, context) {
+        if (!result.passed) {
+            browser.saveScreenshot('./screenshot/failed-test.png')
+        }
+    },
     /**
      *
      * Runs after a Cucumber Scenario.

@@ -1,1 +1,309 @@
-[{"keyword":"Feature","type":"feature","description":"","line":1,"name":"Sauce Demo","uri":"D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\features\\sauce-login.feature","tags":[],"elements":[{"keyword":"Scenario","type":"scenario","description":"","name":"Sebagai user saya gagal login ke aplikasi","tags":[],"id":"sauce-demosebagai-user-saya-gagal-login-ke-aplikasi","steps":[{"arguments":[],"keyword":"Before","name":"","result":{"status":"passed","duration":6000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Given","name":"saya membuka browser","result":{"status":"passed","duration":995000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"When","name":"saya melakukan login dengan username standard_user dan password apasih","result":{"status":"passed","duration":254000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Then","name":"sistem menampilkan pesan error","result":{"status":"passed","duration":30000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"After","name":"","result":{"status":"passed","duration":1000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}}]},{"keyword":"Scenario","type":"scenario","description":"","name":"Sebagai user saya bisa login ke aplikasi","tags":[],"id":"sauce-demosebagai-user-saya-bisa-login-ke-aplikasi","steps":[{"arguments":[],"keyword":"Before","name":"","result":{"status":"passed","duration":2000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Given","name":"saya membuka browser","result":{"status":"passed","duration":56000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"When","name":"saya melakukan login dengan username standard_user dan password secret_sauce","result":{"status":"passed","duration":211000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Then","name":"sistem menampilkan halaman dashboard","result":{"status":"passed","duration":19000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"After","name":"","result":{"status":"passed","duration":1000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}}]},{"keyword":"Scenario","type":"scenario","description":"","name":"Sebagai user saya bisa melihat detail produk","tags":[],"id":"sauce-demosebagai-user-saya-bisa-melihat-detail-produk","steps":[{"arguments":[],"keyword":"Before","name":"","result":{"status":"passed","duration":1000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Given","name":"saya membuka gambar produk","result":{"status":"passed","duration":59000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Then","name":"sistem menampilkan halaman produk yang dipilih","result":{"status":"passed","duration":9000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"After","name":"","result":{"status":"passed","duration":1000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}}]},{"keyword":"Scenario","type":"scenario","description":"","name":"Sebagai user saya bisa menambahkan produk","tags":[],"id":"sauce-demosebagai-user-saya-bisa-menambahkan-produk","steps":[{"arguments":[],"keyword":"Before","name":"","result":{"status":"passed","duration":1000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Given","name":"saya menambahkan produk ke keranjang","result":{"status":"passed","duration":48000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Then","name":"sistem menampilkan tombol remove","result":{"status":"passed","duration":28000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"And","name":"sistem menampilkan jumlah item di keranjang","result":{"status":"failed","duration":21000000,"error_message":"ReferenceError: itemCount is not defined\n    at World.<anonymous> (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/features/step-definitions/steps-sauce.js:61:35)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async wrapPromiseWithTimeout (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\time.ts:55:10)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\user_code_runner.ts:86:16)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:50:20)\n    at async TestCaseRunner.invokeStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:137:12)\n    at async TestCaseRunner.runStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:334:20)\n    at async D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:240:34\n    at async TestCaseRunner.aroundTestStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:170:28)\n    at async TestCaseRunner.runAttempt (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:218:7)\n    at async TestCaseRunner.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:188:29)\n    at async Runtime.runTestCase (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:89:20)\n    at async Runtime.start (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:116:7)\n    at async runCucumber (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\api\\run_cucumber.ts:125:19)\n    at async CucumberAdapter.run (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/@wdio/cucumber-framework/build/index.js:188:33)\n    at async Runner.run (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/@wdio/runner/build/index.js:157:24)"},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"After","name":"","result":{"status":"passed","duration":1000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}}]},{"keyword":"Scenario","type":"scenario","description":"","name":"Sebagai user saya bisa membuka halaman keranjang","tags":[],"id":"sauce-demosebagai-user-saya-bisa-membuka-halaman-keranjang","steps":[{"arguments":[],"keyword":"Before","name":"","result":{"status":"passed","duration":2000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Given","name":"saya membuka halaman keranjang","result":{"status":"failed","duration":10025000000,"error_message":"Error: Can't call click on element with selector \"#add-to-cart-sauce-labs-backpack\" because element wasn't found\n    at implicitWait (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/webdriverio/build/utils/implicitWait.js:29:19)\n    at async Element.elementErrorHandlerCallbackFn (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/webdriverio/build/middlewares.js:15:29)\n    at async Element.wrapCommandFn (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/@wdio/utils/build/shim.js:90:29)\n    at async DashboardPage.addProductToCart (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/test/pageobjects/sauce-dashboardpage.js:26:9)\n    at async World.<anonymous> (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/features/step-definitions/steps-sauce.js:65:5)\n    at async wrapPromiseWithTimeout (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\time.ts:55:10)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\user_code_runner.ts:86:16)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:50:20)\n    at async TestCaseRunner.invokeStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:137:12)\n    at async TestCaseRunner.runStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:334:20)\n    at async D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:240:34\n    at async TestCaseRunner.aroundTestStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:170:28)\n    at async TestCaseRunner.runAttempt (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:218:7)\n    at async TestCaseRunner.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:188:29)\n    at async Runtime.runTestCase (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:89:20)\n    at async Runtime.start (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:116:7)"},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Then","name":"sistem menampilkan halaman keranjang","result":{"status":"skipped","duration":0},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"After","name":"","result":{"status":"passed","duration":1000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}}]},{"keyword":"Scenario","type":"scenario","description":"","name":"Sebagai user saya bisa melanjutkan belanja","tags":[],"id":"sauce-demosebagai-user-saya-bisa-melanjutkan-belanja","steps":[{"arguments":[],"keyword":"Before","name":"","result":{"status":"passed","duration":1000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Given","name":"saya melanjutkan berbelanja","result":{"status":"failed","duration":10038000000,"error_message":"Error: Can't call click on element with selector \"#continue-shopping\" because element wasn't found\n    at implicitWait (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/webdriverio/build/utils/implicitWait.js:29:19)\n    at async Element.elementErrorHandlerCallbackFn (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/webdriverio/build/middlewares.js:15:29)\n    at async Element.wrapCommandFn (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/@wdio/utils/build/shim.js:90:29)\n    at async SauceCartPage.continueShopping (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/test/pageobjects/sauce-cartpage.js:23:9)\n    at async World.<anonymous> (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/features/step-definitions/steps-sauce.js:75:5)\n    at async wrapPromiseWithTimeout (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\time.ts:55:10)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\user_code_runner.ts:86:16)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:50:20)\n    at async TestCaseRunner.invokeStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:137:12)\n    at async TestCaseRunner.runStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:334:20)\n    at async D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:240:34\n    at async TestCaseRunner.aroundTestStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:170:28)\n    at async TestCaseRunner.runAttempt (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:218:7)\n    at async TestCaseRunner.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:188:29)\n    at async Runtime.runTestCase (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:89:20)\n    at async Runtime.start (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:116:7)"},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"Then","name":"sistem menampilkan halaman dashboard","result":{"status":"skipped","duration":0},"line":null,"match":{"location":"can not be determined with webdriver.io"}},{"arguments":[],"keyword":"After","name":"","result":{"status":"passed","duration":1000000},"line":null,"match":{"location":"can not be determined with webdriver.io"}}]}],"id":"sauce-demo","metadata":{"browser":{"name":"chrome","version":"124.0.6367.119"},"device":"Device name not known","platform":{"name":"windows","version":"Version not known"}}}]
+[
+  {
+    "keyword": "Feature",
+    "type": "feature",
+    "description": "",
+    "line": 1,
+    "name": "Sauce Demo",
+    "uri": "D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\features\\sauce-login.feature",
+    "tags": [],
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Sebagai user saya gagal login ke aplikasi",
+        "tags": [],
+        "id": "sauce-demosebagai-user-saya-gagal-login-ke-aplikasi",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": { "status": "passed", "duration": 6000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "saya membuka browser",
+            "result": { "status": "passed", "duration": 995000000 },
+            "line": null,
+            "match": {
+              "location": "can not be determined wit   h webdriver.io"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "saya melakukan login dengan username standard_user dan password apasih",
+            "result": { "status": "passed", "duration": 254000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "sistem menampilkan pesan error",
+            "result": { "status": "passed", "duration": 30000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": { "status": "passed", "duration": 1000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Sebagai user saya bisa login ke aplikasi",
+        "tags": [],
+        "id": "sauce-demosebagai-user-saya-bisa-login-ke-aplikasi",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": { "status": "passed", "duration": 2000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "saya membuka browser",
+            "result": { "status": "passed", "duration": 56000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "name": "saya melakukan login dengan username standard_user dan password secret_sauce",
+            "result": { "status": "passed", "duration": 211000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "sistem menampilkan halaman dashboard",
+            "result": { "status": "passed", "duration": 19000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": { "status": "passed", "duration": 1000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Sebagai user saya bisa melihat detail produk",
+        "tags": [],
+        "id": "sauce-demosebagai-user-saya-bisa-melihat-detail-produk",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": { "status": "passed", "duration": 1000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "saya membuka gambar produk",
+            "result": { "status": "passed", "duration": 59000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "sistem menampilkan halaman produk yang dipilih",
+            "result": { "status": "passed", "duration": 9000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": { "status": "passed", "duration": 1000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Sebagai user saya bisa menambahkan produk",
+        "tags": [],
+        "id": "sauce-demosebagai-user-saya-bisa-menambahkan-produk",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": { "status": "passed", "duration": 1000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "saya menambahkan produk ke keranjang",
+            "result": { "status": "passed", "duration": 48000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "sistem menampilkan tombol remove",
+            "result": { "status": "passed", "duration": 28000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "name": "sistem menampilkan jumlah item di keranjang",
+            "result": {
+              "status": "failed",
+              "duration": 21000000,
+              "error_message": "ReferenceError: itemCount is not defined\n    at World.<anonymous> (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/features/step-definitions/steps-sauce.js:61:35)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async wrapPromiseWithTimeout (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\time.ts:55:10)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\user_code_runner.ts:86:16)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:50:20)\n    at async TestCaseRunner.invokeStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:137:12)\n    at async TestCaseRunner.runStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:334:20)\n    at async D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:240:34\n    at async TestCaseRunner.aroundTestStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:170:28)\n    at async TestCaseRunner.runAttempt (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:218:7)\n    at async TestCaseRunner.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:188:29)\n    at async Runtime.runTestCase (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:89:20)\n    at async Runtime.start (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:116:7)\n    at async runCucumber (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\api\\run_cucumber.ts:125:19)\n    at async CucumberAdapter.run (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/@wdio/cucumber-framework/build/index.js:188:33)\n    at async Runner.run (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/@wdio/runner/build/index.js:157:24)"
+            },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": { "status": "passed", "duration": 1000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Sebagai user saya bisa membuka halaman keranjang",
+        "tags": [],
+        "id": "sauce-demosebagai-user-saya-bisa-membuka-halaman-keranjang",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": { "status": "passed", "duration": 2000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "saya membuka halaman keranjang",
+            "result": {
+              "status": "failed",
+              "duration": 10025000000,
+              "error_message": "Error: Can't call click on element with selector \"#add-to-cart-sauce-labs-backpack\" because element wasn't found\n    at implicitWait (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/webdriverio/build/utils/implicitWait.js:29:19)\n    at async Element.elementErrorHandlerCallbackFn (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/webdriverio/build/middlewares.js:15:29)\n    at async Element.wrapCommandFn (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/@wdio/utils/build/shim.js:90:29)\n    at async DashboardPage.addProductToCart (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/test/pageobjects/sauce-dashboardpage.js:26:9)\n    at async World.<anonymous> (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/features/step-definitions/steps-sauce.js:65:5)\n    at async wrapPromiseWithTimeout (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\time.ts:55:10)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\user_code_runner.ts:86:16)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:50:20)\n    at async TestCaseRunner.invokeStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:137:12)\n    at async TestCaseRunner.runStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:334:20)\n    at async D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:240:34\n    at async TestCaseRunner.aroundTestStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:170:28)\n    at async TestCaseRunner.runAttempt (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:218:7)\n    at async TestCaseRunner.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:188:29)\n    at async Runtime.runTestCase (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:89:20)\n    at async Runtime.start (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:116:7)"
+            },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "sistem menampilkan halaman keranjang",
+            "result": { "status": "skipped", "duration": 0 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": { "status": "passed", "duration": 1000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "type": "scenario",
+        "description": "",
+        "name": "Sebagai user saya bisa melanjutkan belanja",
+        "tags": [],
+        "id": "sauce-demosebagai-user-saya-bisa-melanjutkan-belanja",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Before",
+            "name": "",
+            "result": { "status": "passed", "duration": 1000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "name": "saya melanjutkan berbelanja",
+            "result": {
+              "status": "failed",
+              "duration": 10038000000,
+              "error_message": "Error: Can't call click on element with selector \"#continue-shopping\" because element wasn't found\n    at implicitWait (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/webdriverio/build/utils/implicitWait.js:29:19)\n    at async Element.elementErrorHandlerCallbackFn (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/webdriverio/build/middlewares.js:15:29)\n    at async Element.wrapCommandFn (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/node_modules/@wdio/utils/build/shim.js:90:29)\n    at async SauceCartPage.continueShopping (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/test/pageobjects/sauce-cartpage.js:23:9)\n    at async World.<anonymous> (file:///D:/3M-Tech/SQA/Training%20SQA/Sesi%2010/wdio-cucumber-digitalscola/features/step-definitions/steps-sauce.js:75:5)\n    at async wrapPromiseWithTimeout (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\time.ts:55:10)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\user_code_runner.ts:86:16)\n    at async Object.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\step_runner.ts:50:20)\n    at async TestCaseRunner.invokeStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:137:12)\n    at async TestCaseRunner.runStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:334:20)\n    at async D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:240:34\n    at async TestCaseRunner.aroundTestStep (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:170:28)\n    at async TestCaseRunner.runAttempt (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:218:7)\n    at async TestCaseRunner.run (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\test_case_runner.ts:188:29)\n    at async Runtime.runTestCase (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:89:20)\n    at async Runtime.start (D:\\3M-Tech\\SQA\\Training SQA\\Sesi 10\\wdio-cucumber-digitalscola\\node_modules\\@cucumber\\cucumber\\src\\runtime\\index.ts:116:7)"
+            },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "name": "sistem menampilkan halaman dashboard",
+            "result": { "status": "skipped", "duration": 0 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          },
+          {
+            "arguments": [],
+            "keyword": "After",
+            "name": "",
+            "result": { "status": "passed", "duration": 1000000 },
+            "line": null,
+            "match": { "location": "can not be determined with webdriver.io" }
+          }
+        ]
+      }
+    ],
+    "id": "sauce-demo",
+    "metadata": {
+      "browser": { "name": "chrome", "version": "124.0.6367.119" },
+      "device": "Device name not known",
+      "platform": { "name": "windows", "version": "Version not known" }
+    }
+  }
+]
